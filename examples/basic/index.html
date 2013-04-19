@@ -9,7 +9,13 @@
     <script src="../../jquery.timeoday.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var $searchBox = $('.search-box');
+        var $start = $('.start-time');
+        $start.timeoday({
+          // Time in minutes between time options.
+          start: 0,
+          granularity: 30,
+          astronomical: false
+        });
 
       });
     </script>
