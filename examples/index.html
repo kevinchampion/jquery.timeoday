@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>Time o' day</title>
-    <script src="../jquery.timeoday.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="../jquery.timeoday.js"></script>
+    <script>
+      $(function() {
+        $('#time-of-day').timeoday({
+        });
+      });
+    </script>
   </head>
   <body>
     <form method="post" action="">
-      <input type="text" name="time-of-day" value="7pm" />
+      <input type="text" name="time-of-day" id="time-of-day" value="7pm" />
     </form>
   </body>
 </html>
