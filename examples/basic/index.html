@@ -11,9 +11,14 @@
       $(document).ready(function() {
         var $start = $('.start-time');
         $start.timeoday({
-          // Time in minutes between time options.
+          // Time of day in minutes to begin from. The time options will order
+          // themselves around the start time passed in so that times close to
+          // the start time are placed most closely when the dropdown opens.
           start: 0,
+          // Time in minutes between time options.
           granularity: 30,
+          // Whether this uses astronomical/military 24 hour clock or a 12 hour
+          // clock.
           astronomical: false
         });
 
