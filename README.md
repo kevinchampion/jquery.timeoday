@@ -14,3 +14,11 @@ anchored by the time passed in, which may help users more quickly select the
 time they're looking for.
 * `granularity` - Time in minutes between time options. This setting dictates how many options will be presented in the dropdown.
 * `astronomical` - Boolean, if true a 24 hour astronomical/military clock is used. Otherwise a 12 hour clock is used.
+
+## TODO
+* Dropdown list every half hour
+* Click on text field
+* Default time with their format
+* Parse time
+* Duration
+* Scroll to selected option
